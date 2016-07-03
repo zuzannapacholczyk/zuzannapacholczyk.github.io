@@ -1,0 +1,134 @@
+body {
+	background-color: #FFFDE7;
+	font-family: 'Lato';
+	font-size: 12px;
+}
+
+.topbar {
+	z-index: 5;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: #FF2978;
+	height: 55px;
+	border-bottom: 1px solid #d2d0d3;
+}
+
+.topbar_navi {
+ 	float: right;
+	display: block;
+	padding-right: 40px;
+}
+
+.topbar_navi_link {
+	font-family: 'Lato';
+	line-height: 50px;
+	font-size: 20px;
+	text-decoration: none;
+	color: #FFFDE7;
+	padding-left: 10px;
+}
+
+.topbar_hello {
+	font-family: 'Parisienne';
+	float: left;
+	line-height: 60px;
+	font-size: 30px;
+	text-decoration: none;
+	color: #FFFDE7;
+	padding-left: 40px;
+}
+
+.topbar_navi_link:hover{
+	color: #fbf4a5;
+
+}
+
+.landing_content {
+	position: relative;
+	height: 100vh;
+	text-align: center;
+	border-bottom: 1px solid #d2d0d3;
+}
+
+.landing_bg {
+	background-image: url("../sources/landing_background.jpg");
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	opacity: 0.7;
+
+}
+
+.landing_title {
+	padding-top: 200px;
+	color: #FFFDE7;
+	font-style: oblique italic;
+	font-size: 45px;
+	text-decoration: none;
+	text-shadow: 1px 1px #d2d0d3;
+}
+
+.landing_button {
+	font-size: 20px;
+	text-decoration: none;
+	padding: 16px 48px;
+	border: 2px solid #FFFDE7;
+	border-radius: 6px;
+	background-color: #B20B49;
+	color: #FFFDE7;
+	cursor: pointer;
+}
+
+.landing_button:hover {
+	background-color: transparent;
+	color: fbf4a5;
+}
+
+.gallery_content {
+	background-color: #FFFDE7;
+	font-family: 'Lato';
+	line-height: 50px;
+	font-size: 20px;
+	text-decoration: none;
+	color: #FFFDE7;
+	text-align: center;
+	margin-bottom: 20px;
+	max-width: 90%;
+}
+
+.pics .gallery_pic_display img {
+	max-height: 200px;
+	border: 2px solid #d2d0d3;
+	margin: 2px;
+	cursor: pointer;
+}
+
+.pics .gallery_pic_display img:hover{
+	max-height: 230px;
+	border: 2px solid #d2d0d3;
+	margin: 2px;
+	cursor: pointer;
+}
+
+h1 {
+	color: #FF2978;
+}
+
+h2 {
+	text-align: center;
+	color: #B20B49;
+	font-size: 30px;
+}
+
+h3 {
+	color: #B20B49;
+	color: #2C99B2;
+}
