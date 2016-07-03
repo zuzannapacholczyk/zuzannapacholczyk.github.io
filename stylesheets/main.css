@@ -118,6 +118,25 @@ body {
 	cursor: pointer;
 }
 
+.footer {
+  display: block;
+  padding: 2px 0;
+  background-color: #B20B49;
+  border-top: 2px solid #fafafa;
+  text-align: center;
+}
+
+.footer__paragraph {
+  color: #fafafa;
+  font-family: "Parisienne", sans;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.footer__icon {
+  color: #FF2978;
+}
+
 h1 {
 	color: #FF2978;
 }
