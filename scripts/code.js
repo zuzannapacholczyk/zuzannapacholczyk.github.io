@@ -1,18 +1,15 @@
-$(function($){
-    var addToAll = false;
-    var gallery = true;
-    var titlePosition = 'inside';
-    $(addToAll ? 'img' : 'img.gallery_pic_display').each(function(){
-        var $this = $(this);
-        var title = $this.attr('title');
-        var src = $this.attr('src');
-        var a = $('<a href="#" class="gallery_pic_display"></a>').attr('href', src).attr('title', title);
-        $this.wrap(a);
+var main = function() {
+    $('.gallery_pic').click(function() {
+        var imgSrc = $(this).attr('src');
+        $('.gallery_pic_zoom_chosen').remove();
+        $('.gallery_pic_zoom_content').prepend($('<img>',{class:'gallery_pic_zoom_chosen',src: imgSrc}));
+        $('.gallery_pic_zoom').show();
     });
-    if (gallery)
-        $('a.gallery_pic_display').attr('rel', 'fancyboxgallery');
-    $('a.gallery_pic_display').gallery_pic_display({
-        titlePosition: titlePosition
+
+    $('.gallery_pic_zoom_close').click(function() {
+        $('.gallery_pic_zoom').hide();
     });
-});
-$.noConflict();
+
+};
+
+$(document).ready(main);
