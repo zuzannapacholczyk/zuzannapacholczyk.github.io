@@ -111,10 +111,7 @@ body {
 }
 
 .gallery_pic:hover{
-	max-height: 230px;
-	border: 2px solid #d2d0d3;
-	margin: 2px;
-	cursor: pointer;
+    filter: grayscale(100);
 }
 
 .gallery_pic_zoom {
